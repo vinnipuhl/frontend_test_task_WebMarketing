@@ -1,9 +1,13 @@
 import './styles.css'
-import Card from './components/card'
+import CardList from './components/cardList'
+import SortBar from './components/sortBar'
 
 const root = document.querySelector('#root')
 
-const main = root.insertAdjacentHTML("beforeend", 
+root.insertAdjacentHTML("beforeend", 
 `
-    ${Card.join(' ')}
+<div style='display: flex'>
+    ${SortBar}
+    ${CardList}
+</div>
 `)
